@@ -1,3 +1,19 @@
 ID: SAP_HANA_PRJ_PRAC_01
 _schema-version: '2.0'
 version: 0.0.1
+
+modules:
+ - name: HBD_PRJ_PRACTICE
+   type: hdb
+   path: HBD_PRJ_PRACTICE
+   requires:
+    - name: hdi_HBD_PRJ_PRACTICE
+
+resources:
+ - name: hdi_HBD_PRJ_PRACTICE
+   parameters:
+      config:
+         schema: PRACTICE_HDB
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
