@@ -1,0 +1,10 @@
+namespace SAP_HANA_PRJ_PRAC_01.HBD_PRJ_PRACTICE.cds;
+
+entity CDS_MARK_R {
+    STUDENT     : String(20);
+    ENGLISH     : Integer;
+    MUSIC       : Integer;
+    MATHEMATICS : Integer;
+    PHYSICS     : Integer;
+    BIOLOGY     : Integer;
+};
